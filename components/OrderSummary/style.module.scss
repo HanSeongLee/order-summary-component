@@ -6,6 +6,8 @@
   box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
   border-radius: 20px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   @include media(">desktop") {
     max-width: 450px;
@@ -35,7 +37,6 @@
 
       @include media(">desktop") {
         margin-top: 17px;
-        padding: 16px;
       }
     }
 
@@ -49,6 +50,7 @@
       padding: 17px 16px 16px;
 
       @include media(">desktop") {
+        padding: 25px 24px;
         margin-top: 20px;
       }
 

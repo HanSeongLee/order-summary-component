@@ -23,9 +23,9 @@ const OrderSummary = () => {
                          alt={''}
                     />
                     <div className={styles.planDescriptionContainer}>
-                        <h3 className={styles.planNameText}>
+                        <h2 className={styles.planNameText}>
                             Annual Plan
-                        </h3>
+                        </h2>
                         <p className={styles.planPriceText}>
                             $59.99/year
                         </p>
