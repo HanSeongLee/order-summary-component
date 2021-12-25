@@ -49,10 +49,22 @@ export default function Home() {
         <meta name="twitter:image"
               content={process.env.NEXT_PUBLIC_OG_IMAGE}
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
       </Head>
 
       <main>
+        Order Summary
+
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+
+        Annual Plan
+        $59.99/year
+
+        Change
+
+        Proceed to Payment
+        Cancel Order
       </main>
     </>
   )
