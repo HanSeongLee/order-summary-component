@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import "utils";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Display', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  background: #E0E8FF url("/img/pattern-background-mobile.svg") no-repeat;
+  background-size: contain;
+  background-position: center top;
+
+  @include media(">desktop") {
+    background: #E0E8FF url("/img/pattern-background-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: center top;
+  }
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 29px;
+  color: #1F2E55;
+
+  @include media(">desktop") {
+    font-size: 28px;
+    line-height: 37px;
+  }
+}
+
+p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #717FA6;
+
+  @include media(">desktop") {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: "Red Hat Display";
+  cursor: pointer;
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

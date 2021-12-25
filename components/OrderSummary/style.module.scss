@@ -1,0 +1,128 @@
+@import "styles/utils";
+
+.orderSummaryCard {
+  max-width: 327px;
+  background: #FFFFFF;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  border-radius: 20px;
+  overflow: hidden;
+
+  @include media(">desktop") {
+    max-width: 450px;
+  }
+
+  .cardHeroImage {
+    width: 100%;
+  }
+
+  .cardBody {
+    padding: 24px;
+
+    @include media(">desktop") {
+      padding: 37px 48px 48px;
+    }
+
+    .title {
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .description {
+      font-family: "Red Hat Display";
+      margin-top: 8px;
+      text-align: center;
+      padding: 8px;
+
+      @include media(">desktop") {
+        margin-top: 17px;
+        padding: 16px;
+      }
+    }
+
+    .planBox {
+      margin-top: 24px;
+      background: #F7F9FF;
+      border-radius: 11px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 17px 16px 16px;
+
+      @include media(">desktop") {
+        margin-top: 20px;
+      }
+
+      .planDescriptionContainer {
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .planNameText {
+          font-weight: 900;
+          font-size: 14px;
+          line-height: 19px;
+          color: #1F2E55;
+        }
+
+        .planPriceText {
+          font-size: 14px;
+          line-height: 19px;
+
+          @include media(">desktop") {
+            font-size: 16px;
+            line-height: 21px;
+          }
+        }
+      }
+
+      .changeButton {
+        background: transparent;
+        border: 0;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 17px;
+        color: #382AE1;
+
+        @include media(">desktop") {
+          transition: color 0.3s;
+          font-size: 14px;
+          line-height: 19px;
+
+          &:hover {
+            color: #766CF1;
+          }
+        }
+      }
+    }
+
+    .buttonContainer {
+      display: grid;
+      grid-gap: 30px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+
+      @include media(">desktop") {
+        grid-gap: 32px;
+        margin-top: 32px;
+      }
+
+      .cancelOrderButton {
+        background: transparent;
+        border: 0;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 20px;
+        color: #717FA6;
+
+        @include media(">desktop") {
+          transition: color 0.3s;
+
+          &:hover {
+            color: #1F2E55;
+          }
+        }
+      }
+    }
+  }
+}
